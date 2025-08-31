@@ -3,15 +3,18 @@
     session_start();
     require "./includes/head.php" 
 ?>
+
 <section class="aboutus">
     <section class="breadcrumb breadcrumb_bg">
+        <div class="decorative-shape shape-1"></div>
+        <div class="decorative-shape shape-2"></div>
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="breadcrumb_iner">
                         <div class="breadcrumb_iner_item">
-                            <h2>About us</h2>
-                            <p>Home <span>-</span> about us</p>
+                            <h2>About Us</h2>
+                            <p>Home <span style="margin: 0 10px; opacity: 0.7;">•</span> About Us</p>
                         </div>
                     </div>
                 </div>
@@ -20,83 +23,115 @@
     </section>
 
     <div class="company">
-<div class="companybackground">
+        <div class="companybackground">
+            <div class="company-intro">
+                <div class="intro-card">
+                    <h3>Welcome to JetSketch</h3>
+                    <p><strong>JetSketch</strong> is a revolutionary digital art platform that seamlessly transforms your hand-drawn sketches into stunning digital masterpieces. Our cutting-edge system empowers artists of all levels—from seasoned professionals to passionate students and creative hobbyists—to bridge the timeless charm of traditional sketching with the limitless possibilities of modern digital artistry.</p>
+                    <br>
+                    <p>Simply sketch your vision on paper, capture it with your camera or scanner, and witness the magic as our advanced image processing technology breathes new life into your creations. We enhance colors, refine lines, and add digital polish while preserving the authentic soul and emotional connection that makes hand-drawn art so special.</p>
+                    <br>
+                    <p>At JetSketch, we believe in celebrating the raw authenticity of pencil-to-paper creativity while providing innovative tools to share, edit, and showcase your artwork in our interconnected digital world. Our mission is to honor the personal touch and heartfelt expression of traditional sketching while unlocking the extraordinary potential that digital enhancement offers.</p>
+                </div>
+            </div>
+        </div>
 
-<p>"JETSKETCH" is an innovative art project that combines technology and creativity in a unique and exciting way. The project was created by a team of IT students who wanted to explore the intersection of art and technology. The project consists of a series of digital sketches that were created using various computer programs and software. Each sketch is a unique and captivating work of art, with vibrant colors, intricate details, and bold designs. The "Jetsketch" project is more than just a collection of digital art pieces. It's a testament to the power of collaboration, creativity, and innovation. The team of IT students who worked on the project brought together their diverse skills and talents to create something truly exceptional. The project also represents a new frontier in the world of art. By incorporating technology and digital tools into the creative process, the "Jetsketch" team has opened up new possibilities for artists and creatives everywhere. The project pushes the boundaries of what is possible in art, and inspires others to experiment with new techniques and technologies. Overall, "Jetsketch" is a stunning and inspiring art project that showcases the incredible talent and creativity of a team of IT students. It's a true testament to the power of collaboration and innovation, and a must-see for anyone interested in the intersection of art and technology.</p>
-</div>
-<br><br>
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-  <div class="col">
-    <div class="card h-100" style="border: 2px solid black; padding: 1em; background-color: #6B705C;">
-      <img src="img/lovely.jpg" class="card-img-top" alt="...">
-      <div class="card-body" >
-        <h5 class="card-title">Candelario, Lovely B.</h5>
-        <p class="card-text">Responsible for creating the overall design and layout of the website, ensuring that it is both aesthetically pleasing and user-friendly. I worked closely with the front-end developer to ensure that the design is properly implemented.</p>
-      </div>
-      <div class="card-footer">
-        <small style="font-weight: bold; display: flex; justify-content: center; padding-top: .8rem;"class="text-body-secondary">UI/UX Designer</small>
-      </div>
+        <!-- Enhanced Gallery Section -->
+        <div class="sketches-gallery">
+            <h3 class="gallery-title">Featured Hand-Drawn Artwork</h3>
+            
+            <div class="gallery-grid">
+                <div class="sketch-card">
+                    <img src="img/about/port-study.jpg" alt="Portrait Sketch">
+                    <div class="card-body">
+                        <h5 class="card-title">Portrait Study</h5>
+                        <p class="card-text">A masterful pencil portrait showcasing realistic shading techniques and meticulous attention to facial features, expressions, and human emotion captured through traditional artistry.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small>Pencil on Paper</small>
+                    </div>
+                </div>
+                
+                <div class="sketch-card">
+                    <img src="img/about/nature.jpg" alt="Landscape Sketch">
+                    <div class="card-body">
+                        <h5 class="card-title">Nature Landscape</h5>
+                        <p class="card-text">A breathtaking landscape drawing that captures nature's serene beauty through flowing lines and organic forms, demonstrating the perfect canvas for digital enhancement.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small>Charcoal Drawing</small>
+                    </div>
+                </div>
+                
+                <div class="sketch-card">
+                    <img src="img/about/abstract.jpg" alt="Abstract Sketch">
+                    <div class="card-body">
+                        <h5 class="card-title">Abstract Composition</h5>
+                        <p class="card-text">An experimental abstract masterpiece featuring dynamic geometric shapes and flowing curves that showcase the incredible versatility and creative potential of hand-drawn art.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small>Ink & Pencil</small>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="featured-grid">
+                <div class="sketch-card featured-card">
+                    <img src="img/about/char.jpg" alt="Character Design">
+                    <div class="card-body">
+                        <h5 class="card-title">Character Design</h5>
+                        <p class="card-text">Innovative character illustrations demonstrating how JetSketch transforms initial concept sketches into polished, professional digital artwork perfect for animation, gaming, and commercial applications.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small>Digital Sketch</small>
+                    </div>
+                </div>
+                
+                <div class="sketch-card featured-card">
+                    <img src="img/about/graphite.jpg" alt="Still Life Study">
+                    <div class="card-body">
+                        <h5 class="card-title">Still Life Study</h5>
+                        <p class="card-text">A timeless still life drawing showcasing classical sketching techniques and artistic fundamentals that can be beautifully enhanced and permanently preserved through our digital platform.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small>Graphite Drawing</small>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-  <div class="col">
-    <div class="card h-100"style="border: 2px solid black; padding: 1em;background-color: #6B705C;">
-      <img src="img/sazon.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Sazon, John Joshua B.</h5>
-        <p class="card-text">Oversees project, maintains progress, and communicates regularly with the team, ensuring everyone is informed of updates and deadlines. Skilled at managing large-scale projects and adept at team organization and coordination.</p>
-      </div>
-      <div class="card-footer">
-        <small style="font-weight: bold; display: flex; justify-content: center; padding-top: .8rem;" class="text-body-secondary">Project Manager</small>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-100"style="border: 2px solid black; padding: 1em;background-color: #6B705C;">
-      <img src="img/mendoza.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Mendoza, Ron Aldrich M.</h5>
-        <p class="card-text">Responsible for creating the server-side functionality of the website, such as the database, and other integrations. Use languages PHP, MySql to create a scalable and secure website.</p>
-      </div>
-      <div class="card-footer">
-        <small style="font-weight: bold; display: flex; justify-content: center; padding-top: .8rem;" class="text-body-secondary">Back-end Developer</small>
-      </div>
-    </div>
-  </div>
-</div>
-<br><br><br>
-<div class="companybg" style="display: flex; justify-content: center;">
-<div class="row row-cols-1 row-cols-md-2 g-1" style="width: 67.8%; display: flex; justify-content: center;">
-  <div class="col">
-    <div class="card h-100"style="border: 2px solid black; padding: 1em;background-color: #6B705C;">
-      <img src="img/balgua.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Balgua, Jeruel Clem C.</h5>
-        <p class="card-text">Responsible for implementing the design and creating the user interface of the website. They use HTML, CSS, and JavaScript to create a responsive and interactive website.</p>
-      </div>
-      <div class="card-footer">
-        <small style="font-weight: bold; display: flex; justify-content: center; padding-top: .8rem;" class="text-body-secondary">Front-end Developer</small>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-100"style="border: 2px solid black; padding: 1em;background-color: #6B705C;">
-      <img src="img/arjet.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Millan, Arjet R.</h5>
-        <p class="card-text">Responsible for creating the copy for the website, including product descriptions, blog posts, and other marketing materials. Work closely with the SEO specialist to ensure that the content is optimized for search engines.</p>
-      </div>
-      <div class="card-footer">
-        <small style="font-weight: bold; display: flex; justify-content: center; padding-top: .8rem;"class="text-body-secondary">Content Writer </small>
-      </div>
-    </div>
-  </div>
-</div>
-  </div>
-</div>
-</div>
 </section>
 
-    </section>
+<script>
+// Add smooth scrolling and intersection observer for animations
+document.addEventListener('DOMContentLoaded', function() {
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, observerOptions);
+
+    // Observe all cards for scroll animations
+    document.querySelectorAll('.sketch-card, .intro-card').forEach(card => {
+        observer.observe(card);
+    });
+
+    // Add hover sound effect (optional)
+    document.querySelectorAll('.sketch-card').forEach(card => {
+        card.addEventListener('mouseenter', function() {
+            this.style.transition = 'all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
+        });
+    });
+});
+</script>
 
     <?php require "./includes/footer.php" ?>
 

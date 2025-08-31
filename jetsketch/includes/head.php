@@ -21,6 +21,9 @@
     <link rel="stylesheet" href="css/slick.css" />
     <link rel="stylesheet" href="css/price_rangs.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/contact.css"/>
+    <link rel="stylesheet" href="css/product.css"/>
 </head>
 
 <body>
@@ -30,7 +33,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-12">
                     <nav class="navbar navbar-expand-lg navbar-light">
-                        <a class="navbar-brand" href="/jetsketch">
+                        <a class="navbar-brand" href="index.php">
                             <img src="img/logo.png" alt="logo" />
                         </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,7 +42,7 @@
                         <div class="collapse navbar-collapse main-menu-item" id="navbarSupportedContent">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="/jetsketch">Home</a>
+                                    <a class="nav-link" href="index.php">Home</a>
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link" href="category.php">Products</a>

@@ -3,11 +3,6 @@ require 'includes/conn.php';
 require 'includes/is_added_to_cart.php';
 session_start();
 require "./includes/head.php";
-
-// if(!isset($_SESSION['email'])){
-//     echo "<script> location.href='/ecommerce'; </script>";
-//     exit();
-// }
 ?>
 
 <?php
@@ -124,71 +119,36 @@ while ($row = mysqli_fetch_array($result)) {
                         </div>
                     </div>
                 </div>
-                <div class="row align-items-center latest_product_inner">
+                
+<div class="row align-items-stretch latest_product_inner">
+    <?php
+        $result = mysqli_query($con, $query);
 
-                <?php
-                    $result = mysqli_query($con, $query);
-
-                    while ($row = mysqli_fetch_array($result)) {
-                        echo '<div class="col-lg-4 col-sm-6">
-                                <div class="single_product_item">
-                                    <img width="100%" src="img/product/'.$row['image'].'" alt="djwij" />
-                                    <div class="single_product_text">
-                                        <h4>'. $row['title'] .'</h4>
-                                        <h3>₱ '. $row['price'] .'</h3>';
-                                        if(!check_if_added_to_cart($row['id'])){
-                                           echo '<a href="scripts/cart_add.php?id='.$row['id'].'&qty=1" class="add_cart">+ add to cart<i class="ti-heart"></i></a>';
-                                        } else {
-                                            echo '<a href="#" class="add_cart" disabled>+ add to cart<i class="ti-heart"></i></a>';
-                                        }
-                                       
-                                  echo ' </div>
-                                </div>
-                            </div>';
-                    }
-                ?>
-                    <!-- <div class="col-lg-12">
-                        <div class="pageination">
-                            <nav aria-label="Page navigation example">
-                                <ul class="pagination justify-content-center">
-                                    <li class="page-item">
-                                        <a class="page-link" href="#" aria-label="Previous">
-                                            <i class="ti-angle-double-left"></i>
-                                        </a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="#">1</a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="#">2</a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="#">3</a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="#">4</a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="#">5</a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="#">6</a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="#" aria-label="Next">
-                                            <i class="ti-angle-double-right"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
+        while ($row = mysqli_fetch_array($result)) {
+            echo '<div class="col-lg-4 col-md-6 col-sm-6 col-12 mb-4">
+                    <div class="single_product_item h-100">
+                        <div class="product_image_wrapper">
+                            <img width="100%" src="img/product/'.$row['image'].'" alt="'.$row['title'].'" />
                         </div>
-                    </div> -->
-                </div>
+                        <div class="single_product_text">
+                            <h4>'. $row['title'] .'</h4>
+                            <h3>₱ '. $row['price'] .'</h3>';
+                            if(!check_if_added_to_cart($row['id'])){
+                               echo '<a href="scripts/cart_add.php?id='.$row['id'].'&qty=1" class="add_cart">+ add to cart<i class="ti-heart"></i></a>';
+                            } else {
+                                echo '<a href="#" class="add_cart" disabled>+ add to cart<i class="ti-heart"></i></a>';
+                            }
+                           
+                      echo ' </div>
+                    </div>
+                </div>';
+        }
+    ?>
+</div>
             </div>
         </div>
     </div>
 </section>
-
 
 <?php require './includes/footer.php' ?>
 

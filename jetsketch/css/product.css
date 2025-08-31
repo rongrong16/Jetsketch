@@ -1,0 +1,54 @@
+/* Make all cards the same height */
+.single_product_item {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 1px solid #ddd;
+  overflow: hidden;
+}
+
+.product_image_wrapper {
+  height: 250px;
+  overflow: hidden;
+}
+
+.product_image_wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.single_product_text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 991px) {
+  .latest_product_inner .col-lg-4 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .product_image_wrapper {
+    height: 200px;
+  }
+}
+
+@media (max-width: 575px) {
+  .latest_product_inner .col-lg-4,
+  .latest_product_inner .col-md-6,
+  .latest_product_inner .col-sm-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .product_image_wrapper {
+    height: 250px;
+  }
+}

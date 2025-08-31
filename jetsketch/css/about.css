@@ -1,0 +1,306 @@
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #6b705c;
+  --accent-color: #e74c3c;
+  --text-light: #ecf0f1;
+  --text-dark: #2c3e50;
+  --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --gradient-secondary: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.1);
+  --shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.aboutus {
+  font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.breadcrumb_bg {
+  position: relative;
+  overflow: hidden;
+  padding: 120px 0 80px;
+}
+
+.breadcrumb_bg::before {
+  display: none;
+}
+
+.breadcrumb_iner {
+  text-align: center;
+  color: white;
+  position: relative;
+  z-index: 2;
+}
+
+.breadcrumb_iner h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  animation: fadeInUp 1s ease-out;
+}
+
+.breadcrumb_iner p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  animation: fadeInUp 1s ease-out 0.2s both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.company {
+  padding: 100px 0;
+}
+
+.company-intro {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  margin-bottom: 80px;
+}
+
+.intro-card {
+  background: white;
+  border-radius: 20px;
+  padding: 60px 50px;
+  box-shadow: var(--shadow-soft);
+  position: relative;
+  overflow: hidden;
+  transform: translateY(20px);
+  animation: slideInUp 1s ease-out 0.3s both;
+}
+
+.intro-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: var(--gradient-secondary);
+}
+
+.intro-card h3 {
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.intro-card p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  text-align: justify;
+  margin-bottom: 0;
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.sketches-gallery {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.gallery-title {
+  text-align: center;
+  margin-bottom: 4rem;
+  color: var(--primary-color);
+  font-size: 2.8rem;
+  font-weight: 700;
+  position: relative;
+}
+
+.gallery-title::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: var(--gradient-secondary);
+  border-radius: 2px;
+}
+
+.sketch-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  height: 100%;
+  border: none;
+  margin-bottom: 2rem;
+}
+
+.sketch-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: var(--shadow-hover);
+}
+
+.sketch-card img {
+  height: 280px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.sketch-card:hover img {
+  transform: scale(1.1);
+}
+
+.card-body {
+  padding: 2rem;
+  background: white;
+}
+
+.card-title {
+  color: var(--primary-color);
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.card-text {
+  color: #666;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.card-footer {
+  background: var(--secondary-color);
+  border: none;
+  padding: 1rem;
+}
+
+.card-footer small {
+  color: white;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-footer small::before,
+.card-footer small::after {
+  content: "";
+  height: 1px;
+  background: rgba(255, 255, 255, 0.3);
+  flex: 1;
+  margin: 0 1rem;
+}
+
+/* Responsive Grid Adjustments */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+.featured-card {
+  max-width: 450px;
+  width: 100%;
+}
+
+/* Decorative Elements */
+.decorative-shape {
+  position: absolute;
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+.shape-1 {
+  top: 20%;
+  left: -50px;
+  width: 100px;
+  height: 100px;
+  background: var(--accent-color);
+  border-radius: 50%;
+}
+
+.shape-2 {
+  bottom: 20%;
+  right: -30px;
+  width: 80px;
+  height: 80px;
+  background: var(--secondary-color);
+  transform: rotate(45deg);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .breadcrumb_iner h2 {
+    font-size: 2.5rem;
+  }
+
+  .intro-card {
+    padding: 40px 30px;
+    margin: 0 15px;
+  }
+
+  .intro-card h3 {
+    font-size: 2rem;
+  }
+
+  .gallery-title {
+    font-size: 2.2rem;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0 15px;
+  }
+
+  .featured-grid {
+    grid-template-columns: 1fr;
+    padding: 0 15px;
+  }
+}
+
+/* Animation delays for staggered effect */
+.sketch-card:nth-child(1) {
+  animation: fadeInUp 0.6s ease-out 0.1s both;
+}
+.sketch-card:nth-child(2) {
+  animation: fadeInUp 0.6s ease-out 0.2s both;
+}
+.sketch-card:nth-child(3) {
+  animation: fadeInUp 0.6s ease-out 0.3s both;
+}
+.sketch-card:nth-child(4) {
+  animation: fadeInUp 0.6s ease-out 0.4s both;
+}
+.sketch-card:nth-child(5) {
+  animation: fadeInUp 0.6s ease-out 0.5s both;
+}

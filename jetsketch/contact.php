@@ -19,72 +19,178 @@
         </div>
     </section>
 
-    <section class="contact-section" style="margin-top: 5rem; " >
-        <div class="faqs" style="display: flex; justify-content: center; gap: 3rem; ">
-    <div class="card text-bg-primary mb-3" style="max-width: 20rem; ;">
-  <div class="card-header"style="font-style: italic;">Frequently Asked Questions (FAQs)</div>
-  <div class="card-body" style="background-color: #DDBEA9; width: 100%; height: 30vh;padding: 1rem">
-    <h5 class="card-title"> How do I place an order on your website?</h5>
-    <p class="card-text">To place an order, simply browse our selection of art materials, select the items you want, and click on the "Add to Cart" button. When you're ready to complete your purchase, click on the shopping cart icon and follow the checkout process.</p>
-  </div>
-</div>
-<div class="card text-bg-secondary mb-3" style="max-width: 20rem;">
-  <div class="card-header"style="font-style: italic;">Frequently Asked Questions (FAQs)</div>
-  <div class="card-body"style="background-color: #DDBEA9;width: 100%; height: 30vh;padding: 1rem">
-    <h5 class="card-title">What payment methods do you accept?</h5>
-    <p class="card-text">Our e-commerce platform is designed with your convenience in mind. We proudly accept an array of payment methods, such as the trusted PayPal, Gcash, and various secure online options, providing you with flexibility during your transactions. </p>
-  </div>
-</div>
-<div class="card text-bg-success mb-3" style="max-width: 20rem;">
-  <div class="card-header"style="font-style: italic;">Frequently Asked Questions (FAQs)</div>
-  <div class="card-body"style="background-color: #DDBEA9;width: 100%; height: 30vh;padding: 1rem">
-    <h5 class="card-title"> Can I track my order?</h5>
-    <p class="card-text">After your order is dispatched, you'll promptly receive an email with a dedicated tracking number. This tracking number empowers you to conveniently monitor the status of your delivery, To informed and in control of your order's journey to your doorstep.</p>
-  </div>
-</div>
-<div class="card text-bg-danger mb-3" style="max-width: 20rem;">
-  <div class="card-header"style="font-style: italic;">Frequently Asked Questions (FAQs)</div>
-  <div class="card-body"style="background-color: #DDBEA9;width: 100%; height: 30vh;padding: 1rem">
-    <h5 class="card-title">How long will it take for my order to arrive?</h5>
-    <p class="card-text">Delivery times may vary depending on your location and the shipping method you choose. Typically, orders are delivered within 2-5 business days.</p>
-  </div>
-</div>
-</div>
-<div class="faqs" style="display: flex; justify-content: center; gap: 3rem; ">
-    <div class="card text-bg-primary mb-3" style="max-width: 20rem;">
-  <div class="card-header"style="font-style: italic;">Frequently Asked Questions (FAQs)</div>
-  <div class="card-body" style="background-color: #DDBEA9;width: 100%; height: 30vh;padding: 1rem">
-    <h5 class="card-title">What is your return policy?</h5>
-    <p class="card-text">Our commitment to customer satisfaction is reflected in our hassle-free return policy. Should your purchase fail to meet your expectations, we provide a 30-day window for hassle-free returns, offering the choice of a full refund or exchange. For comprehensive information, please visit our Returns and Refunds page.</p>
-  </div>
-</div>
-<div class="card text-bg-secondary mb-3" style="max-width: 20rem;">
-  <div class="card-header"style="font-style: italic;">Frequently Asked Questions (FAQs)</div>
-  <div class="card-body"style="background-color: #DDBEA9;width: 100%; height: 30vh;padding: 1rem">
-    <h5 class="card-title">Do you offer international shipping?</h5>
-    <p class="card-text">Yes, we offer international shipping to many countries. Shipping fees and delivery times may vary, so please check our Shipping Information page for more details.</p>
-  </div>
-</div>
-<div class="card text-bg-success mb-3" style="max-width: 20rem;">
-  <div class="card-header" style="font-style: italic;">Frequently Asked Questions (FAQs)</div>
-  <div class="card-body"style="background-color: #DDBEA9;width: 100%; height: 30vh;padding: 1rem">
-    <h5 class="card-title">Are the art materials/artwork on your website authentic and high-quality?</h5>
-    <p class="card-text">Absolutely! We take pride in offering authentic, high-quality art materials and artwork from trusted brands and suppliers. Your satisfaction is our priority.</p>
-  </div>
-</div>
-<div class="card text-bg-danger mb-3" style="max-width: 20rem;">
-  <div class="card-header" style="font-style: italic;">Frequently Asked Questions (FAQs)</div>
-  <div class="card-body"style="background-color: #DDBEA9;width: 100%; height: 30vh;padding: 1rem">
-    <h5 class="card-title">How can I contact your customer support team?</h5>
-    <p class="card-text">You can reach our customer support team through the following methods:<br>
+    <!-- FAQ Section -->
+<section class="faq-section">
+    <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        
+        <div class="faq-grid">
+            <div class="faq-card">
+                <div class="faq-header">
+                    How to Order
+                </div>
+                <div class="faq-body">
+                    <h5 class="faq-question">How do I place an order on your website?</h5>
+                    <p class="faq-answer">Simply browse our selection of art materials, select the items you want, and click "Add to Cart". When ready, click the shopping cart icon and follow our simple checkout process.</p>
+                </div>
+            </div>
+            
+            <div class="faq-card">
+                <div class="faq-header">
+                    Payment Options
+                </div>
+                <div class="faq-body">
+                    <h5 class="faq-question">What payment methods do you accept?</h5>
+                    <p class="faq-answer">We accept PayPal, GCash, and various secure online payment options to provide you with maximum flexibility during your transactions.</p>
+                </div>
+            </div>
+            
+            <div class="faq-card">
+                <div class="faq-header">
+                    Order Tracking
+                </div>
+                <div class="faq-body">
+                    <h5 class="faq-question">Can I track my order?</h5>
+                    <p class="faq-answer">Yes! After dispatch, you'll receive an email with a tracking number to monitor your delivery status and stay informed about your order's journey.</p>
+                </div>
+            </div>
+            
+            <div class="faq-card">
+                <div class="faq-header">
+                    Delivery Time
+                </div>
+                <div class="faq-body">
+                    <h5 class="faq-question">How long will it take for my order to arrive?</h5>
+                    <p class="faq-answer">Delivery times vary by location and shipping method. Typically, orders arrive within 2-5 business days from dispatch.</p>
+                </div>
+            </div>
+            
+            <div class="faq-card">
+                <div class="faq-header">
+                    Returns & Refunds
+                </div>
+                <div class="faq-body">
+                    <h5 class="faq-question">What is your return policy?</h5>
+                    <p class="faq-answer">We offer a hassle-free 30-day return policy. If you're not satisfied, we provide full refunds or exchanges. Visit our Returns page for details.</p>
+                </div>
+            </div>
+            
+            <div class="faq-card">
+                <div class="faq-header">
+                    International Orders
+                </div>
+                <div class="faq-body">
+                    <h5 class="faq-question">Do you offer international shipping?</h5>
+                    <p class="faq-answer">Yes, we ship to many countries worldwide. Shipping fees and delivery times vary by destination. Check our Shipping Information page for details.</p>
+                </div>
+            </div>
+            
+            <div class="faq-card">
+                <div class="faq-header">
+                    Product Quality
+                </div>
+                <div class="faq-body">
+                    <h5 class="faq-question">Are your art materials authentic and high-quality?</h5>
+                    <p class="faq-answer">Absolutely! We pride ourselves on offering authentic, high-quality art materials from trusted brands and suppliers. Your satisfaction is our top priority.</p>
+                </div>
+            </div>
+            
+            <div class="faq-card">
+                <div class="faq-header">
+                    Customer Support
+                </div>
+                <div class="faq-body">
+                    <h5 class="faq-question">How can I contact customer support?</h5>
+                    <p class="faq-answer">Reach us via email at support@yourartmaterials.com or call our support line at 1-800-123-4567. We're here to help!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-Email: support@yourartmaterials.com<br>
-Customer Support Phone: 1-800-123-4567</p><br>
-  </div>
-</div>
-</div>
+<!-- Contact Information Section -->
+<section class="contact-info-section">
+    <div class="container">
+        <div class="row justify-content-center text-center mb-4">
+            <div class="col-lg-8">
+                <h2 class="section-title" style="color: white; margin-bottom: 2rem;">Contact Information</h2>
+                <p style="font-size: 1.1rem; opacity: 0.9; text-align: center;">Multiple ways to reach our dedicated support team</p>
+            </div>
+        </div>
+        
+        <div class="contact-info-grid">
+            <div class="contact-info-card">
+                <div class="contact-icon">
+                    📧
+                </div>
+                <div class="contact-method">Email Support</div>
+                <div class="contact-details">
+                    <a href="mailto:support@yourartmaterials.com">support@yourartmaterials.com</a>
+                    <br><small>Response within 24 hours</small>
+                </div>
+            </div>
+            
+            <div class="contact-info-card">
+                <div class="contact-icon">
+                    📞
+                </div>
+                <div class="contact-method">Phone Support</div>
+                <div class="contact-details">
+                    <a href="tel:1-800-123-4567">1-800-123-4567</a>
+                    <br><small>Mon-Fri, 9AM-6PM</small>
+                </div>
+            </div>
+            
+            <div class="contact-info-card">
+                <div class="contact-icon">
+                    💬
+                </div>
+                <div class="contact-method">Live Chat</div>
+                <div class="contact-details">
+                    Available on our website
+                    <br><small>Real-time assistance</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-    </section>
+
+
+<!-- Additional Resources -->
+<section style="background: #f8f9fa; padding: 3rem 0;">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-4 mb-3">
+                <div style="background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.08);">
+                    <div style="font-size: 2rem; margin-bottom: 1rem;">📖</div>
+                    <h5 style="color: #2c3e50; margin-bottom: 1rem;">Help Center</h5>
+                    <p style="color: #6c757d; margin-bottom: 1rem;">Browse our comprehensive help articles</p>
+                    <a href="#" class="btn btn-outline-primary">Visit Help Center</a>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-3">
+                <div style="background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.08);">
+                    <div style="font-size: 2rem; margin-bottom: 1rem;">🚚</div>
+                    <h5 style="color: #2c3e50; margin-bottom: 1rem;">Shipping Info</h5>
+                    <p style="color: #6c757d; margin-bottom: 1rem;">Learn about our shipping options and policies</p>
+                    <a href="#" class="btn btn-outline-primary">View Shipping</a>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-3">
+                <div style="background: white; padding: 2.9rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.08);">
+                    <div style="font-size: 2rem; margin-bottom: 1rem;">↩️</div>
+                    <h5 style="color: #2c3e50; margin-bottom: 1rem;">Returns</h5>
+                    <p style="color: #6c757d; margin-bottom: 1rem;">Easy returns and exchange process</p>
+                    <a href="#" class="btn btn-outline-primary">Return Policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
     <?php require "./includes/footer.php" ?>
 

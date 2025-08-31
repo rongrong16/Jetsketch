@@ -89,92 +89,41 @@ session_start();
 			<div class="col-lg-12">
 				<div class="product_list_slider owl-carousel">
 					<div class="single_product_list_slider">
-						<div class="row align-items-center justify-content-between">
-						<?php
+						<div class="row align-items-stretch justify-content-start">
+    <?php
+        $query = "SELECT * from `products`";
+        $result = mysqli_query($con, $query);
 
-							$query = "SELECT * from `products`";
-							$result = mysqli_query($con, $query);
-
-							while ($row = mysqli_fetch_array($result)) {
-								echo '<div class="col-lg-3 col-sm-6" style="padding: 10px 20px !important;">
-										<div class="single_product_item">
-											<img width="100%" src="img/product/'.$row['image'].'" alt="djwij" />
-											<div class="single_product_text">
-												<h4>'. $row['title'] .'</h4>
-												<h3>₱ '. $row['price'] .'</h3>';
-												if(!check_if_added_to_cart($row['id'])){
-												echo '<a href="scripts/cart_add.php?id='.$row['id'].'&qty=1" class="add_cart">+ add to cart<i class="ti-heart"></i></a>';
-												} else {
-													echo '<a href="#" class="add_cart" disabled>+ add to cart<i class="ti-heart"></i></a>';
-												}
-											
-										echo ' </div>
-										</div>
-									</div>';
-							}
-						?>
-						</div>
+        while ($row = mysqli_fetch_array($result)) {
+            echo '<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="single_product_item h-100 d-flex flex-column">
+                        <div class="product_image_container" style="height: 250px; overflow: hidden;">
+                            <img class="w-100 h-100" style="object-fit: cover;" src="img/product/'.$row['image'].'" alt="'.$row['title'].'" />
+                        </div>
+                        <div class="single_product_text flex-grow-1 d-flex flex-column justify-content-between p-3">
+                            <div>
+                                <h4 class="product-title mb-2" style="min-height: 50px; display: flex; align-items: center;">'. $row['title'] .'</h4>
+                            </div>
+                            <div class="product-footer">
+                                <h3 class="price mb-2">₱ '. number_format($row['price']) .'</h3>';
+                                if(!check_if_added_to_cart($row['id'])){
+                                    echo '<a href="scripts/cart_add.php?id='.$row['id'].'&qty=1" class="add_cart btn btn-primary w-100">+ add to cart <i class="ti-heart"></i></a>';
+                                } else {
+                                    echo '<a href="#" class="add_cart btn btn-secondary w-100" style="opacity: 0.6; cursor: not-allowed;">Already in cart <i class="ti-heart"></i></a>';
+                                }
+                            echo '</div>
+                        </div>
+                    </div>
+                </div>';
+        }
+    ?>
+</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
-
-
-
-<!-- <section class="product_list best_seller section_padding">
-	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-lg-12">
-				<div class="section_tittle text-center">
-					<h2>Best Sellers <span>shop</span></h2>
-				</div>
-			</div>
-		</div>
-		<div class="row align-items-center justify-content-between">
-			<div class="col-lg-12">
-				<div class="best_product_slider owl-carousel">
-					<div class="single_product_item">
-						<img src="img/product/product_1.png" alt="" />
-						<div class="single_product_text">
-							<h4>Quartz Belt Watch</h4>
-							<h3>$150.00</h3>
-						</div>
-					</div>
-					<div class="single_product_item">
-						<img src="img/product/product_2.png" alt="" />
-						<div class="single_product_text">
-							<h4>Quartz Belt Watch</h4>
-							<h3>$150.00</h3>
-						</div>
-					</div>
-					<div class="single_product_item">
-						<img src="img/product/product_3.png" alt="" />
-						<div class="single_product_text">
-							<h4>Quartz Belt Watch</h4>
-							<h3>$150.00</h3>
-						</div>
-					</div>
-					<div class="single_product_item">
-						<img src="img/product/product_4.png" alt="" />
-						<div class="single_product_text">
-							<h4>Quartz Belt Watch</h4>
-							<h3>$150.00</h3>
-						</div>
-					</div>
-					<div class="single_product_item">
-						<img src="img/product/product_5.png" alt="" />
-						<div class="single_product_text">
-							<h4>Quartz Belt Watch</h4>
-							<h3>$150.00</h3>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section> -->
 
 <section class="subscribe_area section_padding">
 	<div class="container">
